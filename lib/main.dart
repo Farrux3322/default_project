@@ -1,3 +1,5 @@
+import 'package:default_project/ui/main_screen/main_screen.dart';
+import 'package:default_project/ui/welcome/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: WelcomeScreen(),
+    );
   }
 }
